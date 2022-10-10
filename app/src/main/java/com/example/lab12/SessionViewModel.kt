@@ -55,7 +55,6 @@ class SessionViewModel:ViewModel() {
     fun regresiveCount(){
         job = viewModelScope.launch {
             delay(30000L)
-            //delay(5000L) //tiempo para testear
             _validAuthToken.value = false
             _logger.value = logStatus.notLogged
         }
